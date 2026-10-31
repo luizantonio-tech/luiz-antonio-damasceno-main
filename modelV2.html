@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINCI | Model V2</title>
+
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <!-- Fontes usadas pae -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Host+Grotesk:wght@400;500&display=swap"
+    rel="stylesheet" 
+  />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-texto text-tinta bg-white">
+
+  <!-- Cabeçalho. -->
+  <header class="sticky top-0 z-50 bg-white h-20">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 h-20 flex items-center justify-between">
+
+      <a href="index.html"><img src="assets/logo/logo1.png" alt="VINCI" class="h-[34px] w-auto" /></a>
+
+      <!-- Menu. -->
+      <nav id="menu" class="hidden lg:flex gap-12 font-titulo text-xl tracking-wide
+                            max-lg:absolute max-lg:top-20 max-lg:left-0 max-lg:right-0 max-lg:bg-white
+                            max-lg:flex-col max-lg:gap-4 max-lg:p-5 max-lg:border-b">
+        <a href="index.html#models" class="hover:text-vinci transition">MODELOS</a>
+        <a href="index.html#services" class="hover:text-vinci transition">SERVIÇOS</a>
+        <button id="botaoVeiculos" class="hover:text-vinci transition text-left">VEÍCULOS</button>
+        <a href="teste-drive.html" class="hover:text-vinci transition">TEST DRIVE</a>
+        <a href="#contact" class="hover:text-vinci transition">CONTATO</a>
+      </nav>
+
+      <button id="botaoMenu" class="lg:hidden text-3xl" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <!-- Megamenu -->
+    <div id="megamenu"
+      class="hidden absolute top-20 left-0 right-0 bg-white border-y border-gray-300 shadow-xl max-h-[calc(100vh-80px)] overflow-auto">
+      <div class="max-w-[1440px] mx-auto px-5 md:px-10 py-10 grid lg:grid-cols-[1fr_320px] gap-10">
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div class="text-center">
+            <img src="assets/carros/modelo-v2.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V1</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/model-v2.png" alt="Modelo V2" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V2</h3>
+            <a href="modelV2.html" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v3.png" alt="Modelo V3" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V3</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v4.png" alt="Modelo V4" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V4</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v5.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V5</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v6.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V6</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+        </div>
+
+        <div class="lg:border-l lg:pl-8">
+          <p class="font-titulo text-lg tracking-widest text-gray-500 border-b pb-3 mb-4">NAVEGUE</p>
+          <ul class="font-titulo text-2xl tracking-wider space-y-2">
+            <li><a href="#" class="hover:text-vinci">OFERTAS</a></li>
+            <li><a href="teste-drive.html" class="hover:text-vinci">TEST DRIVE</a></li>
+            <li><a href="#" class="hover:text-vinci">LOJAS</a></li>
+            <li><a href="index.html#services" class="hover:text-vinci">SERVIÇOS</a></li>
+            <li><a href="#" class="hover:text-vinci">SAC</a></li>
+            <li><a href="#" class="hover:text-vinci">PRIVACIDADE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!--Apresentação do carro -->
+    <section class="text-center pt-14 px-5">
+      <img src="assets/carros/model-v2.png" alt="VINCI Model V2" class="mx-auto max-w-[947px] w-full" />
+      <h1 class="font-titulo text-5xl md:text-7xl mt-4">VINCI MODEL V2</h1>
+      <p class="max-w-[911px] mx-auto text-xl mt-5 mb-8">O futuro da mobilidade em sua forma mais pura. O VINCI MODEL V2 combina autonomia surpreendente, cockpit 100% digital e aceleração instantânea para redefinir cada viagem.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="index.html#models"
+          class="bg-vinci hover:bg-red-700 text-white text-center rounded px-12 py-3 min-w-[240px] font-titulo text-xl uppercase tracking-wide transition">MODELOS</a>
+        <a href="teste-drive.html"
+          class="border border-tinta hover:bg-tinta hover:text-white text-center rounded px-12 py-3 min-w-[240px] font-titulo text-xl uppercase tracking-wide transition">TEST
+          DRIVE</a>
+      </div>
+    </section>
+
+    <!-- numero sobre o carro -->
+    <section class="max-w-[1100px] mx-auto px-5 py-20 text-center">
+      <p class="font-titulo text-2xl tracking-widest text-gray-500 mb-8">TECNOLOGIA ALIADA AO FUTURO</p>
+      <div class="grid md:grid-cols-3 gap-8 md:gap-0">
+
+        <div class="text-center px-6 ">
+          <p class="font-titulo text-5xl md:text-6xl whitespace-nowrap">520 KM</p>
+          <p class="font-titulo text-xl tracking-widest text-gray-500 mt-3">COM 1 CARGA</p>
+        </div>
+
+        <div class="text-center px-6 md:border-l md:border-gray-300">
+          <p class="font-titulo text-5xl md:text-6xl whitespace-nowrap">2.800 RPM</p>
+          <p class="font-titulo text-xl tracking-widest text-gray-500 mt-3">DE TORQUE</p>
+        </div>
+
+        <div class="text-center px-6 md:border-l md:border-gray-300">
+          <p class="font-titulo text-5xl md:text-6xl whitespace-nowrap">10 ANOS</p>
+          <p class="font-titulo text-xl tracking-widest text-gray-500 mt-3">GARANTIA</p>
+        </div>
+      </div>
+    </section>
+
+    <!--carro na estrada -->
+    <section class="max-w-[1440px] mx-auto px-5 md:px-10 pb-14">
+      <img src="assets/carros/model-v2-road.png" alt="VINCI Model V2 na estrada"
+        class="w-full h-[260px] md:h-[520px] object-cover rounded-xl" />
+    </section>
+
+    <!-- caracteristicas -->
+    <section class="max-w-[1440px] mx-auto px-5 md:px-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
+
+      <article class="flex flex-col justify-between lg:px-6">
+        <div>
+          <h3 class="font-titulo text-4xl leading-none">RECARGA RÁPIDA</h3>
+          <p class="text-gray-500 mt-4 mb-8">Recarregue até 80% da bateria em menos de 30 minutos em estações de alta potência. Mais autonomia e praticidade para você ir mais longe sem perder tempo.</p>
+        </div>
+        <img src="assets/carros/recarga.png" alt="RECARGA RÁPIDA" class="w-full h-[240px] object-cover mt-auto" />
+      </article>
+
+      <article class="flex flex-col justify-between lg:border-l lg:border-gray-200 lg:px-6">
+        <div>
+          <h3 class="font-titulo text-4xl leading-none">PAINEL DE INSTRUMENTOS</h3>
+          <p class="text-gray-500 mt-4 mb-8">Display 100% digital e intuitivo com dados de navegação, consumo e
+            entretenimento integrados diretamente no seu campo de visão para uma pilotagem segura.</p>
+        </div>
+        <img src="assets/carros/painel.png" alt="PAINEL DE INSTRUMENTOS"
+          class="w-full h-[240px] object-cover mt-auto" />
+      </article>
+
+      <article class="flex flex-col justify-between lg:border-l lg:border-gray-200 lg:px-6">
+        <div>
+          <h3 class="font-titulo text-4xl leading-none">PONTOS DE RECARGA</h3>
+          <p class="text-gray-500 mt-4 mb-8">Encontre facilmente milhares de estações de carregamento parceiras em tempo real através do sistema de navegação integrado ao veículo.</p>
+        </div>
+        <img src="assets/carros/recarga-pontos.png" alt="PONTOS DE RECARGA"
+          class="w-full h-[240px] object-cover mt-auto" />
+      </article>
+
+      <article class="flex flex-col justify-between lg:border-l lg:border-gray-200 lg:px-6">
+        <div>
+          <h3 class="font-titulo text-4xl leading-none">DESIGN PREMIADO</h3>
+          <p class="text-gray-500 mt-4 mb-8">Reconhecido internacionalmente por suas linhas aerodinâmicas e acabamento premium, unindo sofisticação visual, eficiência e presença marcante.</p>
+        </div>
+        <img src="assets/carros/design.png" alt="DESIGN PREMIADO" class="w-full h-[240px] object-cover mt-auto" />
+      </article>
+
+    </section>
+
+    <!--  Detalhes  -->
+    <section class="max-w-[1440px] mx-auto px-5 md:px-10 pt-24">
+      <div class="grid lg:grid-cols-[1fr_240px_240px] gap-8">
+        <div class="max-w-[380px]">
+          <h2 class="font-titulo text-4xl md:text-[42px] leading-none">VINCI MODEL V2</h2>
+          <p class="text-gray-500 mt-6"> A evolução da mobilidade urbana chegou. Cada detalhe foi projetado para antecipar suas necessidades, trazendo o futuro automotivo diretamente para o seu dia a dia com máxima conectividade e automação.</p>
+        </div>
+        <ul class="font-titulo space-y-4">
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">A</span>RETROVISORES
+            INTELIGENTES</li>
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">B</span>RODAS
+            DE LIGA LEVE</li>
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">C</span>RECONHECIMENTO
+            DE DIGITAL</li>
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">D</span>SENSOR
+            DE PROXIMIDADE</li>
+        </ul>
+        <ul class="font-titulo space-y-4">
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">E</span>ANTENA
+            5G</li>
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">F</span>DESIGN
+            SOFISTICADO</li>
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">G</span>ABERTURA
+            AUTOMÁTICA</li>
+          <li class="flex items-center gap-3"><span
+              class="grid place-items-center w-[18px] h-[18px] rounded-full bg-tinta text-white text-[11px]">H</span>CÂMERA
+            DE ESTACIONAMENTO</li>
+        </ul>
+      </div>
+
+      <div class="relative w-full md:w-[79%] mx-auto mt-10">
+        <img src="assets/carros/detalhes-v2.png" alt="Detalhes do VINCI Model V2" class="w-full" />
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:16.4%; top:32.1%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">A</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">RETROVISORES
+            INTELIGENTES</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:11.6%; top:67.5%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">B</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">RODAS
+            DE LIGA LEVE</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:31.1%; top:40.4%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">C</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">RECONHECIMENTO
+            DE DIGITAL</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:55.3%; top:36.6%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">D</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">SENSOR
+            DE PROXIMIDADE</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:66.5%; top:14.9%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">E</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">ANTENA
+            5G</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:64.8%; top:59.6%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">F</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">DESIGN
+            SOFISTICADO</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:79.2%; top:35.1%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">G</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">ABERTURA
+            AUTOMÁTICA</span>
+        </div>
+
+        <div class="group absolute hidden md:block -translate-x-1/2 -translate-y-1/2" style="left:93.9%; top:70.4%">
+          <span
+            class="grid place-items-center w-[18px] h-[18px] rounded-full bg-vinci group-hover:bg-tinta text-white text-[11px] cursor-pointer">H</span>
+          <span
+            class="hidden group-hover:block absolute bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-tinta text-white font-titulo px-3 py-1 rounded z-10">CÂMERA
+            DE ESTACIONAMENTO</span>
+        </div>
+      </div>
+    </section>
+
+    <!--  FAQ  -->
+    <section class="max-w-[1144px] mx-auto px-5 pt-24">
+      <h2 class="font-titulo text-4xl md:text-[42px] text-center">FAQ</h2>
+      <p class="font-titulo text-2xl tracking-widest text-gray-500 text-center mt-4 mb-12">PERGUNTAS FREQUENTES</p>
+      <div class="border-t border-gray-200">
+
+        <details class="group border-b border-gray-200">
+          <summary
+            class="flex justify-between items-center gap-6 py-6 cursor-pointer list-none font-titulo text-2xl md:text-[26px] hover:text-vinci">
+            QUAL É A AUTONOMIA REAL DA BATERIA EM DIFERENTES CONDIÇÕES DE CONDUÇÃO?
+            <span class="group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="pb-6 pr-10 text-gray-500">A autonomia de até 520 km é medida em ciclo misto. Em rodovia, em alta
+            velocidade e com ar-condicionado ligado, ela pode ser menor.</p>
+        </details>
+
+        <details class="group border-b border-gray-200">
+          <summary
+            class="flex justify-between items-center gap-6 py-6 cursor-pointer list-none font-titulo text-2xl md:text-[26px] hover:text-vinci">
+            QUANTO TEMPO O CARRO LEVA PARA CARREGAR EM TOMADAS RESIDENCIAIS E EM CARREGADORES RÁPIDOS?
+            <span class="group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="pb-6 pr-10 text-gray-500">Em tomada residencial a recarga completa acontece durante a noite. Em
+            carregadores rápidos, a maior parte da bateria é recuperada em poucos minutos.</p>
+        </details>
+
+        <details class="group border-b border-gray-200">
+          <summary
+            class="flex justify-between items-center gap-6 py-6 cursor-pointer list-none font-titulo text-2xl md:text-[26px] hover:text-vinci">
+            COMO FUNCIONA A INFRAESTRUTURA DE RECARGA PARA VIAGENS DE LONGA DISTÂNCIA?
+            <span class="group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="pb-6 pr-10 text-gray-500">O sistema de navegação mostra os pontos de recarga compatíveis ao longo da
+            rota e sugere as melhores paradas.</p>
+        </details>
+
+        <details class="group border-b border-gray-200">
+          <summary
+            class="flex justify-between items-center gap-6 py-6 cursor-pointer list-none font-titulo text-2xl md:text-[26px] hover:text-vinci">
+            QUAL É O TEMPO DE GARANTIA DA BATERIA E QUAL A SUA VIDA ÚTIL ESTIMADA?
+            <span class="group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="pb-6 pr-10 text-gray-500">A garantia é de 10 anos. Com uso normal, a vida útil estimada da bateria é
+            maior que esse período.</p>
+        </details>
+
+        <details class="group border-b border-gray-200">
+          <summary
+            class="flex justify-between items-center gap-6 py-6 cursor-pointer list-none font-titulo text-2xl md:text-[26px] hover:text-vinci">
+            QUAIS SÃO AS PRINCIPAIS ECONOMIAS EM MANUTENÇÃO E IMPOSTOS COMPARADO A UM CARRO A COMBUSTÃO?
+            <span class="group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="pb-6 pr-10 text-gray-500">Menos peças móveis significam menos revisões, e muitos estados oferecem
+            desconto ou isenção de impostos para carros elétricos.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Roda o pé-->
+  <footer id="contact" class="border-t border-gray-400 mt-16 pt-16 pb-10">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 grid grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10">
+
+      <div class="col-span-2 md:col-span-1 flex flex-col justify-between gap-10">
+        <a href="index.html"><img src="assets/logo/logo1.png" alt="VINCI" class="h-[34px] w-auto" /></a>
+        <p class="font-titulo text-lg text-gray-500">COPYRIGHT 2026.<br />TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">SOBRE</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">A marca</a></li>
+          <li><a href="#" class="hover:text-vinci">História</a></li>
+          <li><a href="#" class="hover:text-vinci">Qualidade</a></li>
+          <li><a href="#" class="hover:text-vinci">Onde estamos</a></li>
+          <li><a href="#" class="hover:text-vinci">Investidores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">CONTATO</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">Fale conosco</a></li>
+          <li><a href="#" class="hover:text-vinci">Atendimento</a></li>
+          <li><a href="#" class="hover:text-vinci">SAC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">SAC</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">Canais oficiais</a></li>
+          <li><a href="#" class="hover:text-vinci">Redes sociais</a></li>
+          <li><a href="#" class="hover:text-vinci">Suporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

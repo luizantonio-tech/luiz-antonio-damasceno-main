@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINCI | Test Drive</title>
+
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-texto text-tinta bg-white">
+
+  <header class="sticky top-0 z-50 bg-white h-20">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 h-20 flex items-center justify-between">
+
+      <a href="index.html"><img src="assets/logo/logo1.png" alt="VINCI" class="h-[34px] w-auto" /></a>
+
+      <nav id="menu" class="hidden lg:flex gap-12 font-titulo text-xl tracking-wide
+                            max-lg:absolute max-lg:top-20 max-lg:left-0 max-lg:right-0 max-lg:bg-white
+                            max-lg:flex-col max-lg:gap-4 max-lg:p-5 max-lg:border-b">
+        <a href="index.html#models" class="hover:text-vinci transition">MODELOS</a>
+        <a href="index.html#services" class="hover:text-vinci transition">SERVIÇOS</a>
+        <button id="botaoVeiculos" class="hover:text-vinci transition text-left">VEÍCULOS</button>
+        <a href="teste-drive.html" class="hover:text-vinci transition">TEST DRIVE</a>
+        <a href="#contact" class="hover:text-vinci transition">CONTATO</a>
+      </nav>
+
+      <button id="botaoMenu" class="lg:hidden text-3xl" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <div id="megamenu" class="hidden absolute top-20 left-0 right-0 bg-white border-y border-gray-300 shadow-xl max-h-[calc(100vh-80px)] overflow-auto">
+      <div class="max-w-[1440px] mx-auto px-5 md:px-10 py-10 grid lg:grid-cols-[1fr_320px] gap-10">
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div class="text-center">
+            <img src="assets/carros/modelo-v2.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V1</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/model-v2.png" alt="Modelo V2" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V2</h3>
+            <a href="modelV2.html" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v3.png" alt="Modelo V3" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V3</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v4.png" alt="Modelo V4" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V4</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v5.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V5</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+          <div class="text-center">
+            <img src="assets/carros/modelo-v6.png" alt="Modelo V1" class="w-full h-32 object-contain" />
+            <h3 class="font-titulo text-xl tracking-widest mt-2">MODELO V6</h3>
+            <a href="#" class="font-titulo text-sm text-gray-500 hover:text-vinci">Ver mais</a>
+          </div>
+
+        </div>
+
+        <div class="lg:border-l lg:pl-8">
+          <p class="font-titulo text-lg tracking-widest text-gray-500 border-b pb-3 mb-4">NAVEGUE</p>
+          <ul class="font-titulo text-2xl tracking-wider space-y-2">
+            <li><a href="#" class="hover:text-vinci">OFERTAS</a></li>
+            <li><a href="teste-drive.html" class="hover:text-vinci">TEST DRIVE</a></li>
+            <li><a href="#" class="hover:text-vinci">LOJAS</a></li>
+            <li><a href="index.html#services" class="hover:text-vinci">SERVIÇOS</a></li>
+            <li><a href="#" class="hover:text-vinci">SAC</a></li>
+            <li><a href="#" class="hover:text-vinci">PRIVACIDADE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-[720px] mx-auto px-5 py-16 md:py-20">
+
+    <h1 class="font-titulo text-4xl md:text-5xl text-center">AGENDE UMA VISITA E FAÇA SEU TEST DRIVE</h1>
+    <p class="font-titulo text-xl text-gray-500 text-center mt-4 mb-12">Preencha o formulário abaixo e agende sua experiência com um veículo VINCI.</p>
+
+    <form id="testDriveForm" class="flex flex-col gap-5">
+
+        <div class="flex flex-col gap-2">
+          <label for="nome" class="font-titulo text-lg tracking-wide">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required class="w-full h-11 px-3 border border-gray-300 bg-white font-titulo text-lg outline-none focus:border-tinta" />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="email" class="font-titulo text-lg tracking-wide">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required class="w-full h-11 px-3 border border-gray-300 bg-white font-titulo text-lg outline-none focus:border-tinta" />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="telefone" class="font-titulo text-lg tracking-wide">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required class="w-full h-11 px-3 border border-gray-300 bg-white font-titulo text-lg outline-none focus:border-tinta" />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="modelo" class="font-titulo text-lg tracking-wide">Modelo de interesse</label>
+          <select id="modelo" name="modelo" required class="w-full h-11 px-3 border border-gray-300 bg-white font-titulo text-lg outline-none focus:border-tinta">
+            <option value="">Selecione um modelo</option>
+            <option value="v1">VINCI MODEL V1</option>
+            <option value="v2">VINCI MODEL V2</option>
+            <option value="v3">VINCI MODEL V3</option>
+          </select>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+
+        <div class="flex flex-col gap-2">
+          <label for="data" class="font-titulo text-lg tracking-wide">Data</label>
+          <input type="date" id="data" name="data" placeholder="" required class="w-full h-11 px-3 border border-gray-300 bg-white font-titulo text-lg outline-none focus:border-tinta" />
+        </div>
+          <div class="flex flex-col gap-2">
+            <label for="horario" class="font-titulo text-lg tracking-wide">Horário</label>
+            <select id="horario" name="horario" required class="w-full h-11 px-3 border border-gray-300 bg-white font-titulo text-lg outline-none focus:border-tinta">
+              <option value="">Selecione</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="bg-vinci hover:bg-red-700 text-white text-center rounded px-12 py-3 w-full font-titulo text-xl uppercase tracking-wide transition mt-2">AGENDAR TEST DRIVE</button>
+
+        <!-- Mensagem que aparece depois de enviar (começa escondida) -->
+        <p id="mensagemSucesso" class="hidden bg-green-50 border border-green-300 text-green-800 rounded p-4 font-titulo text-lg text-center"></p>
+    </form>
+
+  </main>
+
+  <footer id="contact" class="border-t border-gray-400 mt-16 pt-16 pb-10">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 grid grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10">
+
+      <div class="col-span-2 md:col-span-1 flex flex-col justify-between gap-10">
+        <a href="index.html"><img src="assets/logo/logo1.png" alt="VINCI" class="h-[34px] w-auto" /></a>
+        <p class="font-titulo text-lg text-gray-500">COPYRIGHT 2026.<br />TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">SOBRE</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">A marca</a></li>
+          <li><a href="#" class="hover:text-vinci">História</a></li>
+          <li><a href="#" class="hover:text-vinci">Qualidade</a></li>
+          <li><a href="#" class="hover:text-vinci">Onde estamos</a></li>
+          <li><a href="#" class="hover:text-vinci">Investidores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">CONTATO</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">Fale conosco</a></li>
+          <li><a href="#" class="hover:text-vinci">Atendimento</a></li>
+          <li><a href="#" class="hover:text-vinci">SAC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-titulo text-2xl tracking-widest mb-4">SAC</h3>
+        <ul class="font-titulo text-xl text-gray-500 space-y-2">
+          <li><a href="#" class="hover:text-vinci">Canais oficiais</a></li>
+          <li><a href="#" class="hover:text-vinci">Redes sociais</a></li>
+          <li><a href="#" class="hover:text-vinci">Suporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

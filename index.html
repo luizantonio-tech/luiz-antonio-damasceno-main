@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINCI | Electric Vehicles</title>
+
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CABEÇALHO
+       ============================================================ -->
+  <header class="cabecalho">
+    <div class="cabecalho__interno">
+
+      <a href="index.html">
+        <img src="assets/logo/logo1.png" alt="VINCI" class="cabecalho__logo" />
+      </a>
+
+      <!-- Navegação principal -->
+      <nav id="nav-principal">
+        <a href="#catalogo">MODELOS</a>
+        <a href="#servicos">SERVIÇOS</a>
+        <button id="btn-veiculos">VEÍCULOS</button>
+        <a href="test-drive.html">TEST DRIVE</a>
+        <a href="#rodape">CONTATO</a>
+      </nav>
+
+      <button id="btn-hamburguer" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <!-- Painel megamenu veículos -->
+    <div id="painel-veiculos">
+      <div class="megamenu__interno">
+
+        <div class="megamenu__grid-carros">
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v2.png" alt="Modelo V1" />
+            <h3>MODELO V1</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/model-v2.png" alt="Modelo V2" />
+            <h3>MODELO V2</h3>
+            <a href="modelov2.html">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v3.png" alt="Modelo V3" />
+            <h3>MODELO V3</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v4.png" alt="Modelo V4" />
+            <h3>MODELO V4</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v5.png" alt="Modelo V5" />
+            <h3>MODELO V5</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v6.png" alt="Modelo V6" />
+            <h3>MODELO V6</h3>
+            <a href="#">Ver mais</a>
+          </div>
+        </div>
+
+        <div class="megamenu__nav-lateral">
+          <p class="megamenu__nav-lateral-titulo">NAVEGUE</p>
+          <ul>
+            <li><a href="#">OFERTAS</a></li>
+            <li><a href="test-drive.html">TEST DRIVE</a></li>
+            <li><a href="#">LOJAS</a></li>
+            <li><a href="#servicos">SERVIÇOS</a></li>
+            <li><a href="#">SAC</a></li>
+            <li><a href="#">PRIVACIDADE</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SEÇÃO HERÓI
+         ============================================================ -->
+    <section class="secao-heroi">
+      <img src="assets/carros/hero.png" alt="VINCI Model V3" class="secao-heroi__imagem" />
+      <div class="secao-heroi__gradiente"></div>
+
+      <div class="secao-heroi__conteudo">
+        <h1 class="secao-heroi__titulo">VINCI MODEL V3</h1>
+        <p class="secao-heroi__descricao">Conheça a terceira geração do elétrico que está transformando o mercado. Mais espaço, maior alcance de bateria e conectividade total em todos os seus caminhos.</p>
+        <div class="secao-heroi__botoes">
+          <a href="#catalogo" class="btn btn--destaque">MODELOS</a>
+          <a href="test-drive.html" class="btn btn--borda-branca">TEST DRIVE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CATÁLOGO DE MODELOS
+         ============================================================ -->
+    <section id="catalogo" class="secao-catalogo">
+
+      <article id="cartao-v2">
+        <div class="cartao-modelo__cabecalho">
+          <h2 class="cartao-modelo__titulo">VINCI<br />MODEL V2</h2>
+          <ul class="cartao-modelo__specs">
+            <li><span>Potência:</span> 300 cavalos</li>
+            <li><span>Autonomia:</span> 500km por carga</li>
+            <li><span>Peso:</span> 1.500 kg</li>
+            <li><span>Tecnologia:</span> GPS e telemática</li>
+          </ul>
+        </div>
+
+        <a href="modelov2.html">
+          <img src="assets/carros/model-v3.png" alt="VINCI MODEL V2" class="cartao-modelo__imagem" />
+        </a>
+
+        <div class="cartao-modelo__rodape">
+          <p>A SUV mais robusta da categoria</p>
+          <a href="modelov2.html" class="cartao-modelo__link">CONHEÇA →</a>
+        </div>
+      </article>
+
+      <article id="cartao-v1">
+        <div class="cartao-modelo__cabecalho">
+          <h2 class="cartao-modelo__titulo">VINCI<br />MODEL V1</h2>
+          <ul class="cartao-modelo__specs">
+            <li><span>Potência:</span> 250 cv</li>
+            <li><span>Autonomia:</span> 450 km</li>
+            <li><span>Tecnologia:</span> 100% elétrica</li>
+          </ul>
+        </div>
+
+        <a href="#">
+          <img src="assets/carros/model-v1.png" alt="VINCI MODEL V1" class="cartao-modelo__imagem" />
+        </a>
+
+        <div class="cartao-modelo__rodape">
+          <p>A SUV mais inovadora da categoria</p>
+          <a href="#" class="cartao-modelo__link">CONHEÇA →</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Banner estrada -->
+    <img src="assets/carros/road.png" alt="VINCI na estrada" class="banner-estrada" />
+
+    <!-- ============================================================
+         SEÇÃO SERVIÇOS
+         ============================================================ -->
+    <section id="servicos" class="secao-servicos">
+
+      <a href="test-drive.html" class="servico-link">
+        <span>AGENDE UM TEST DRIVE</span><span>→</span>
+      </a>
+
+      <a href="#" class="servico-link">
+        <span>VEJA OFERTAS</span><span>→</span>
+      </a>
+
+      <a href="https://www.google.com/maps/search/lojas+de+carros/" class="servico-link">
+        <span>ENCONTRE UMA LOJA</span><span>→</span>
+      </a>
+
+    </section>
+
+    <!-- Banner road-car -->
+    <img src="assets/carros/road-car.png" alt="VINCI elétrico" class="banner-estrada" />
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer id="rodape" class="rodape-principal">
+    <div class="rodape-principal__interno">
+
+      <div class="rodape-principal__marca">
+        <a href="index.html">
+          <img src="assets/logo/logo1.png" alt="VINCI" class="rodape-principal__logo" />
+        </a>
+        <p class="rodape-principal__copyright">COPYRIGHT 2026.<br />TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">SOBRE</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">A marca</a></li>
+          <li><a href="#">História</a></li>
+          <li><a href="#">Qualidade</a></li>
+          <li><a href="https://www.google.com/maps/search/lojas+de+carros/">Onde estamos</a></li>
+          <li><a href="#">Investidores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">CONTATO</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Atendimento</a></li>
+          <li><a href="#">SAC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">SAC</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">Canais oficiais</a></li>
+          <li><a href="#">Redes sociais</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

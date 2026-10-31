@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINCI | Test Drive</title>
+
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CABEÇALHO
+       ============================================================ -->
+  <header class="cabecalho">
+    <div class="cabecalho__interno">
+
+      <a href="index.html">
+        <img src="assets/logo/logo1.png" alt="VINCI" class="cabecalho__logo" />
+      </a>
+
+      <nav id="nav-principal">
+        <a href="index.html#catalogo">MODELOS</a>
+        <a href="index.html#servicos">SERVIÇOS</a>
+        <button id="btn-veiculos">VEÍCULOS</button>
+        <a href="test-drive.html">TEST DRIVE</a>
+        <a href="#rodape">CONTATO</a>
+      </nav>
+
+      <button id="btn-hamburguer" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <!-- Painel megamenu veículos -->
+    <div id="painel-veiculos">
+      <div class="megamenu__interno">
+
+        <div class="megamenu__grid-carros">
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v2.png" alt="Modelo V1" />
+            <h3>MODELO V1</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/model-v2.png" alt="Modelo V2" />
+            <h3>MODELO V2</h3>
+            <a href="modelov2.html">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v3.png" alt="Modelo V3" />
+            <h3>MODELO V3</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v4.png" alt="Modelo V4" />
+            <h3>MODELO V4</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v5.png" alt="Modelo V5" />
+            <h3>MODELO V5</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v6.png" alt="Modelo V6" />
+            <h3>MODELO V6</h3>
+            <a href="#">Ver mais</a>
+          </div>
+        </div>
+
+        <div class="megamenu__nav-lateral">
+          <p class="megamenu__nav-lateral-titulo">NAVEGUE</p>
+          <ul>
+            <li><a href="#">OFERTAS</a></li>
+            <li><a href="test-drive.html">TEST DRIVE</a></li>
+            <li><a href="#">LOJAS</a></li>
+            <li><a href="index.html#servicos">SERVIÇOS</a></li>
+            <li><a href="#">SAC</a></li>
+            <li><a href="#">PRIVACIDADE</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       CONTEÚDO PRINCIPAL — FORMULÁRIO
+       ============================================================ -->
+  <main class="pagina-formulario">
+
+    <h1 class="pagina-formulario__titulo">AGENDE UMA VISITA E FAÇA SEU TEST DRIVE</h1>
+    <p class="pagina-formulario__subtitulo">Preencha o formulário abaixo e agende sua experiência com um veículo VINCI.</p>
+
+    <form id="form-agendamento">
+
+      <div class="campo-grupo">
+        <label for="nome" class="campo-label">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required class="campo-input" />
+      </div>
+
+      <div class="campo-grupo">
+        <label for="email" class="campo-label">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required class="campo-input" />
+      </div>
+
+      <div class="campo-grupo">
+        <label for="telefone" class="campo-label">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required class="campo-input" />
+      </div>
+
+      <div class="campo-grupo">
+        <label for="modelo" class="campo-label">Modelo de interesse</label>
+        <select id="modelo" name="modelo" required class="campo-select">
+          <option value="">Selecione um modelo</option>
+          <option value="v1">VINCI MODEL V1</option>
+          <option value="v2">VINCI MODEL V2</option>
+          <option value="v3">VINCI MODEL V3</option>
+        </select>
+      </div>
+
+      <div class="grade-data-hora">
+        <div class="campo-grupo">
+          <label for="data" class="campo-label">Data</label>
+          <input type="date" id="data" name="data" required class="campo-input" />
+        </div>
+
+        <div class="campo-grupo">
+          <label for="horario" class="campo-label">Horário</label>
+          <select id="horario" name="horario" required class="campo-select">
+            <option value="">Selecione</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">AGENDAR TEST DRIVE</button>
+
+      <p id="aviso-sucesso" hidden></p>
+
+    </form>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer id="rodape" class="rodape-principal">
+    <div class="rodape-principal__interno">
+
+      <div class="rodape-principal__marca">
+        <a href="index.html">
+          <img src="assets/logo/logo1.png" alt="VINCI" class="rodape-principal__logo" />
+        </a>
+        <p class="rodape-principal__copyright">COPYRIGHT 2026.<br />TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">SOBRE</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">A marca</a></li>
+          <li><a href="#">História</a></li>
+          <li><a href="#">Qualidade</a></li>
+          <li><a href="#">Onde estamos</a></li>
+          <li><a href="#">Investidores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">CONTATO</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Atendimento</a></li>
+          <li><a href="#">SAC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">SAC</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">Canais oficiais</a></li>
+          <li><a href="#">Redes sociais</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

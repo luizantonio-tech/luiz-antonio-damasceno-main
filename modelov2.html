@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINCI | Model V2</title>
+
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CABEÇALHO
+       ============================================================ -->
+  <header class="cabecalho">
+    <div class="cabecalho__interno">
+
+      <a href="index.html">
+        <img src="assets/logo/logo1.png" alt="VINCI" class="cabecalho__logo" />
+      </a>
+
+      <nav id="nav-principal">
+        <a href="index.html#catalogo">MODELOS</a>
+        <a href="index.html#servicos">SERVIÇOS</a>
+        <button id="btn-veiculos">VEÍCULOS</button>
+        <a href="test-drive.html">TEST DRIVE</a>
+        <a href="#rodape">CONTATO</a>
+      </nav>
+
+      <button id="btn-hamburguer" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <!-- Painel megamenu veículos -->
+    <div id="painel-veiculos">
+      <div class="megamenu__interno">
+
+        <div class="megamenu__grid-carros">
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v2.png" alt="Modelo V1" />
+            <h3>MODELO V1</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/model-v2.png" alt="Modelo V2" />
+            <h3>MODELO V2</h3>
+            <a href="modelov2.html">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v3.png" alt="Modelo V3" />
+            <h3>MODELO V3</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v4.png" alt="Modelo V4" />
+            <h3>MODELO V4</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v5.png" alt="Modelo V5" />
+            <h3>MODELO V5</h3>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="megamenu__item-carro">
+            <img src="assets/carros/modelo-v6.png" alt="Modelo V6" />
+            <h3>MODELO V6</h3>
+            <a href="#">Ver mais</a>
+          </div>
+        </div>
+
+        <div class="megamenu__nav-lateral">
+          <p class="megamenu__nav-lateral-titulo">NAVEGUE</p>
+          <ul>
+            <li><a href="#">OFERTAS</a></li>
+            <li><a href="test-drive.html">TEST DRIVE</a></li>
+            <li><a href="#">LOJAS</a></li>
+            <li><a href="index.html#servicos">SERVIÇOS</a></li>
+            <li><a href="#">SAC</a></li>
+            <li><a href="#">PRIVACIDADE</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         APRESENTAÇÃO DO MODELO
+         ============================================================ -->
+    <section class="apresentacao-modelo">
+      <img src="assets/carros/model-v2.png" alt="VINCI Model V2" class="apresentacao-modelo__imagem" />
+      <h1 class="apresentacao-modelo__titulo">VINCI MODEL V2</h1>
+      <p class="apresentacao-modelo__descricao">O futuro da mobilidade em sua forma mais pura. O VINCI MODEL V2 combina autonomia surpreendente, cockpit 100% digital e aceleração instantânea para redefinir cada viagem.</p>
+      <div class="apresentacao-modelo__botoes">
+        <a href="index.html#catalogo" class="btn btn--destaque">MODELOS</a>
+        <a href="test-drive.html" class="btn btn--borda-escura">TEST DRIVE</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NÚMEROS TÉCNICOS
+         ============================================================ -->
+    <section class="numeros-tecnicos">
+      <p class="numeros-tecnicos__subtitulo">TECNOLOGIA ALIADA AO FUTURO</p>
+      <div class="numeros-tecnicos__grade">
+
+        <div class="numeros-tecnicos__item">
+          <p class="numeros-tecnicos__valor">520 KM</p>
+          <p class="numeros-tecnicos__legenda">COM 1 CARGA</p>
+        </div>
+
+        <div class="numeros-tecnicos__item">
+          <p class="numeros-tecnicos__valor">2.800 RPM</p>
+          <p class="numeros-tecnicos__legenda">DE TORQUE</p>
+        </div>
+
+        <div class="numeros-tecnicos__item">
+          <p class="numeros-tecnicos__valor">10 ANOS</p>
+          <p class="numeros-tecnicos__legenda">GARANTIA</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CARRO NA ESTRADA
+         ============================================================ -->
+    <section class="secao-estrada">
+      <img src="assets/carros/model-v2-road.png" alt="VINCI Model V2 na estrada" class="secao-estrada__imagem" />
+    </section>
+
+    <!-- ============================================================
+         GRID DE CARACTERÍSTICAS
+         ============================================================ -->
+    <section class="grid-caracteristicas">
+
+      <article class="caracteristica-item">
+        <div>
+          <h3 class="caracteristica-item__titulo">RECARGA RÁPIDA</h3>
+          <p class="caracteristica-item__descricao">Recarregue até 80% da bateria em menos de 30 minutos em estações de alta potência. Mais autonomia e praticidade para você ir mais longe sem perder tempo.</p>
+        </div>
+        <img src="assets/carros/recarga.png" alt="RECARGA RÁPIDA" class="caracteristica-item__imagem" />
+      </article>
+
+      <article class="caracteristica-item">
+        <div>
+          <h3 class="caracteristica-item__titulo">PAINEL DE INSTRUMENTOS</h3>
+          <p class="caracteristica-item__descricao">Display 100% digital e intuitivo com dados de navegação, consumo e entretenimento integrados diretamente no seu campo de visão para uma pilotagem segura.</p>
+        </div>
+        <img src="assets/carros/painel.png" alt="PAINEL DE INSTRUMENTOS" class="caracteristica-item__imagem" />
+      </article>
+
+      <article class="caracteristica-item">
+        <div>
+          <h3 class="caracteristica-item__titulo">PONTOS DE RECARGA</h3>
+          <p class="caracteristica-item__descricao">Encontre facilmente milhares de estações de carregamento parceiras em tempo real através do sistema de navegação integrado ao veículo.</p>
+        </div>
+        <img src="assets/carros/recarga-pontos.png" alt="PONTOS DE RECARGA" class="caracteristica-item__imagem" />
+      </article>
+
+      <article class="caracteristica-item">
+        <div>
+          <h3 class="caracteristica-item__titulo">DESIGN PREMIADO</h3>
+          <p class="caracteristica-item__descricao">Reconhecido internacionalmente por suas linhas aerodinâmicas e acabamento premium, unindo sofisticação visual, eficiência e presença marcante.</p>
+        </div>
+        <img src="assets/carros/design.png" alt="DESIGN PREMIADO" class="caracteristica-item__imagem" />
+      </article>
+
+    </section>
+
+    <!-- ============================================================
+         SEÇÃO DETALHES INTERATIVOS
+         ============================================================ -->
+    <section class="secao-detalhes">
+      <div class="detalhes__grade">
+
+        <div class="detalhes__intro">
+          <h2 class="detalhes__intro-titulo">VINCI MODEL V2</h2>
+          <p class="detalhes__intro-desc">A evolução da mobilidade urbana chegou. Cada detalhe foi projetado para antecipar suas necessidades, trazendo o futuro automotivo diretamente para o seu dia a dia com máxima conectividade e automação.</p>
+        </div>
+
+        <ul class="detalhes__lista">
+          <li><span class="badge-circular">A</span>RETROVISORES INTELIGENTES</li>
+          <li><span class="badge-circular">B</span>RODAS DE LIGA LEVE</li>
+          <li><span class="badge-circular">C</span>RECONHECIMENTO DE DIGITAL</li>
+          <li><span class="badge-circular">D</span>SENSOR DE PROXIMIDADE</li>
+        </ul>
+
+        <ul class="detalhes__lista">
+          <li><span class="badge-circular">E</span>ANTENA 5G</li>
+          <li><span class="badge-circular">F</span>DESIGN SOFISTICADO</li>
+          <li><span class="badge-circular">G</span>ABERTURA AUTOMÁTICA</li>
+          <li><span class="badge-circular">H</span>CÂMERA DE ESTACIONAMENTO</li>
+        </ul>
+
+      </div>
+
+      <!-- Imagem interativa com pontos -->
+      <div class="detalhes__mapa-wrapper">
+        <img src="assets/carros/detalhes-v2.png" alt="Detalhes do VINCI Model V2" class="detalhes__mapa-imagem" />
+
+        <div class="ponto-detalhe" style="left:16.4%; top:32.1%">
+          <span class="ponto-detalhe__badge">A</span>
+          <span class="ponto-detalhe__tooltip">RETROVISORES INTELIGENTES</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:11.6%; top:67.5%">
+          <span class="ponto-detalhe__badge">B</span>
+          <span class="ponto-detalhe__tooltip">RODAS DE LIGA LEVE</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:31.1%; top:40.4%">
+          <span class="ponto-detalhe__badge">C</span>
+          <span class="ponto-detalhe__tooltip">RECONHECIMENTO DE DIGITAL</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:55.3%; top:36.6%">
+          <span class="ponto-detalhe__badge">D</span>
+          <span class="ponto-detalhe__tooltip">SENSOR DE PROXIMIDADE</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:66.5%; top:14.9%">
+          <span class="ponto-detalhe__badge">E</span>
+          <span class="ponto-detalhe__tooltip">ANTENA 5G</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:64.8%; top:59.6%">
+          <span class="ponto-detalhe__badge">F</span>
+          <span class="ponto-detalhe__tooltip">DESIGN SOFISTICADO</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:79.2%; top:35.1%">
+          <span class="ponto-detalhe__badge">G</span>
+          <span class="ponto-detalhe__tooltip">ABERTURA AUTOMÁTICA</span>
+        </div>
+
+        <div class="ponto-detalhe" style="left:93.9%; top:70.4%">
+          <span class="ponto-detalhe__badge">H</span>
+          <span class="ponto-detalhe__tooltip">CÂMERA DE ESTACIONAMENTO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section class="secao-faq">
+      <h2 class="secao-faq__titulo">FAQ</h2>
+      <p class="secao-faq__subtitulo">PERGUNTAS FREQUENTES</p>
+
+      <div class="faq__wrapper">
+
+        <details class="faq__item">
+          <summary>
+            QUAL É A AUTONOMIA REAL DA BATERIA EM DIFERENTES CONDIÇÕES DE CONDUÇÃO?
+            <span class="faq__seta">▾</span>
+          </summary>
+          <p class="faq__resposta">A autonomia de até 520 km é medida em ciclo misto. Em rodovia, em alta velocidade e com ar-condicionado ligado, ela pode ser menor.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            QUANTO TEMPO O CARRO LEVA PARA CARREGAR EM TOMADAS RESIDENCIAIS E EM CARREGADORES RÁPIDOS?
+            <span class="faq__seta">▾</span>
+          </summary>
+          <p class="faq__resposta">Em tomada residencial a recarga completa acontece durante a noite. Em carregadores rápidos, a maior parte da bateria é recuperada em poucos minutos.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            COMO FUNCIONA A INFRAESTRUTURA DE RECARGA PARA VIAGENS DE LONGA DISTÂNCIA?
+            <span class="faq__seta">▾</span>
+          </summary>
+          <p class="faq__resposta">O sistema de navegação mostra os pontos de recarga compatíveis ao longo da rota e sugere as melhores paradas.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            QUAL É O TEMPO DE GARANTIA DA BATERIA E QUAL A SUA VIDA ÚTIL ESTIMADA?
+            <span class="faq__seta">▾</span>
+          </summary>
+          <p class="faq__resposta">A garantia é de 10 anos. Com uso normal, a vida útil estimada da bateria é maior que esse período.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            QUAIS SÃO AS PRINCIPAIS ECONOMIAS EM MANUTENÇÃO E IMPOSTOS COMPARADO A UM CARRO A COMBUSTÃO?
+            <span class="faq__seta">▾</span>
+          </summary>
+          <p class="faq__resposta">Menos peças móveis significam menos revisões, e muitos estados oferecem desconto ou isenção de impostos para carros elétricos.</p>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer id="rodape" class="rodape-principal">
+    <div class="rodape-principal__interno">
+
+      <div class="rodape-principal__marca">
+        <a href="index.html">
+          <img src="assets/logo/logo1.png" alt="VINCI" class="rodape-principal__logo" />
+        </a>
+        <p class="rodape-principal__copyright">COPYRIGHT 2026.<br />TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">SOBRE</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">A marca</a></li>
+          <li><a href="#">História</a></li>
+          <li><a href="#">Qualidade</a></li>
+          <li><a href="#">Onde estamos</a></li>
+          <li><a href="#">Investidores</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">CONTATO</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Atendimento</a></li>
+          <li><a href="#">SAC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="rodape-principal__titulo-coluna">SAC</h3>
+        <ul class="rodape-principal__lista">
+          <li><a href="#">Canais oficiais</a></li>
+          <li><a href="#">Redes sociais</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
